@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/icons/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-
-    <title>Spotify</title>
-    <link rel="stylesheet" href="reset.css">
-
+    <link rel="shortcut icon" href="src/assets/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/reset.css">
+    <link rel="stylesheet" href="src/style/vars.css">
+    <link rel="stylesheet" href="src/style/main-content.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
         integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
         integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+
+
+    <title>Spotify</title>
+    
 </head>
 <body>
     <header>
@@ -20,7 +23,7 @@
             <nav class="sidebar_navigation">
                 <div class="logo">
                     <a href="">
-                        <img src="../assets/icons/logo-spotify.png" alt="Logo do Spotify">
+                        <img src="src/assets/icons/logo-spotify.png" alt="Logo do Spotify">
                     </a>
                     <div>
 
@@ -73,12 +76,49 @@
             </div>
         </div>
     </header>
+<!-- Conteúdo Principal-->
+    <main>
+        <div class="main-conteiner">
+            <nav class="header__navigation">
+                <div class="navegation">
+                    <button class="arrow-left">
+                        <img src="src/assets/icons/small-left.png" alt="Seta Esquerda">
+                    </button>               
+                    <button class="arrow-right">
+                        <img src="src/assets/icons/small-right.png" alt="Seta Direita">
+                    </button>
+                </div>
+                <div class="header__search">
+                        <img src="src/assets/icons/search.png" alt="">
+                        <input id="search-input" type="text" name="" maxlength="800" placeholder="O que você quer ouvir?">
+                </div>
+                
+                <div class="header__login">
+                        <button class="subscribe">Inscreva-se</button>
+                        <button class="login">Entrar</button>
+                </div>
+            </nav>
+        </div>
+    </main>
 
     <footer>
         <div class="footer">
-            <div class="footer__content">
-                <span>We andour partners use cookies to personalize your experience, to show you ads based on your interests, and for measurement and analytics purposes. By using our website and services, you agree to our use of cookies as described in ourCookie Policy.</span>
-            </div>
+                <section class="footer-section">
+                    <div class="footer-section_text">
+                        <div class="footer-section_titulos">
+                            <span>Prévia do Spotify</span>
+                        </div>
+                        <div class="footer-section_paragrafo">
+                            <span class="footer_section_paragrafo">Cadastre-se para obter músicas e podcasts ilimitidados com anúncios ocasionais. não é necessário cartão de crédito.</span>
+                        </div>
+                    </div>
+                    <div class="footer-section_button">
+                        <span>
+                            <button type="button">Cadastre-se gratuitamente</button>
+                        </span>
+                    </div>
+                    
+                </section>
         </div>
     </footer>
 </body>
